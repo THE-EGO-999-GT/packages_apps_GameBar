@@ -144,7 +144,7 @@ class GameBar private constructor(context: Context) {
     private var singleTapEnabled = true
     private var singleTapFunction = "toggle_format"
     private var doubleTapEnabled = true
-    private var doubleTapFunction = "adjust_length"
+    private var doubleTapFunction = "toggle_fps_logging"
     private var longPressFunction = "load_preset"
     private var bgDrawable: GradientDrawable? = null
     
@@ -276,7 +276,7 @@ class GameBar private constructor(context: Context) {
         doubleTapFunction = sanitizeGestureFunction(
             prefs = prefs,
             key = "game_bar_doubletap_function",
-            defaultValue = "adjust_length"
+            defaultValue = "toggle_fps_logging"
         )
         longPressFunction = sanitizeGestureFunction(
             prefs = prefs,

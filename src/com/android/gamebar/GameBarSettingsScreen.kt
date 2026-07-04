@@ -191,7 +191,7 @@ fun GameBarSettingsScreen(
     var singleTapEnable by remember { mutableStateOf(prefs.getBoolean("game_bar_single_tap_enable", true)) }
     var singleTapFunction by remember { mutableStateOf(readGestureAction("game_bar_single_tap_function", "toggle_format")) }
     var doubleTapEnable by remember { mutableStateOf(prefs.getBoolean("game_bar_doubletap_enable", true)) }
-    var doubleTapFunction by remember { mutableStateOf(readGestureAction("game_bar_doubletap_function", "adjust_length")) }
+    var doubleTapFunction by remember { mutableStateOf(readGestureAction("game_bar_doubletap_function", "toggle_fps_logging")) }
     var longPressEnable by remember { mutableStateOf(prefs.getBoolean("game_bar_longpress_enable", true)) }
     var longPressFunction by remember { mutableStateOf(readGestureAction("game_bar_longpress_function", "load_preset")) }
     var longPressTimeout by remember { mutableStateOf(prefs.getString("game_bar_longpress_timeout", "500") ?: "500") }
